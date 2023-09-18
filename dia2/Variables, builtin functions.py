@@ -22,5 +22,15 @@ else:
 if any(booleans):
     print('There are some true statement there')
 
-# ascii(__obj) calculate the ascii number associated to the obj given
+# ascii(__obj) returns string representation that you can use to display
+# the object in a context where only ASCII characters are allowed.
+print(ascii('Buenos días'))
+
+# With the ord(__c) function we can obtain the ASCII representation of a char
 print(ord('A'))
+
+# bin(__number) convert given number into decimal to binary base
+print(bin(32))
+
+# breakpoint() interrupts the program and an interactive debugger start at that point
+byte_array = bytearray([65, 66, 67])
