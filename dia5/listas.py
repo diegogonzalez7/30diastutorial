@@ -1,4 +1,3 @@
-'''
 # En Python existen cuatro tipos de colecciones:
 
 ## Listas: colección ordenada y modificable que puede admitir duplicados.
@@ -136,7 +135,6 @@ lista_sort.clear()
 
 #13) Destruye la lista
 del lista_sort
-'''
 
 #14) Crea una lista con 10 edades y haz lo siguiente:
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
