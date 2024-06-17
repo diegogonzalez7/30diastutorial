@@ -4,3 +4,4 @@
  - Día 3: [Operadores](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia3)
  - Día 4: [Strings](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia4)
  - Día 5: [Listas](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia5)
+ - Día 6: [Tuplas](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia6)
