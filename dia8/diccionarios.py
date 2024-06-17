@@ -1,4 +1,3 @@
-'''
 # Los diccionarios son una colección desordenada y modificable que usa pares clave-valor
 
 # CREACIÓN DE UN DICCIONARIO
@@ -67,7 +66,7 @@ persona.clear()
 # ELIMINAR UN DICCIONARIO
 del persona
 
-'''
+
 # EJERCICIOS
 
 #1) Crea un diccionario vacío llamado dog
@@ -103,19 +102,23 @@ print(type(skills))
 #5) Añade varias skills nuevas
 sk = ['Django', 'Pandas']
 n_skills = skills + sk
+persona['skills'] = n_skills
+print(persona)
 
+#6) Obtén las claves del diccionario
+persona_values = persona.values()
+print(persona_values)
 
-#6)
+#7) Obtén las keys del diccionario
+persona_keys = persona.keys()
+print(persona_keys)
 
-#7)
+#8) Pasa el diccionario a una lista de tuplas
+print(persona.items())
 
-#8)
+#9) Borra uno de los items del diccionario
+persona.popitem()
+print(persona)
 
-#9)
-
-#10)
-
-#11)
-
-
-
+#10) Borra el diccionario
+del persona
