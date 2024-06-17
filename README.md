@@ -5,3 +5,4 @@
  - Día 4: [Strings](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia4)
  - Día 5: [Listas](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia5)
  - Día 6: [Tuplas](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia6)
+ - Día 7: [Sets](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia7)
