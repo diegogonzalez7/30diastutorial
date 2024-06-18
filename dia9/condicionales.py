@@ -162,12 +162,12 @@ fullstack = {'React', 'Node', 'MongoDB'}
 
 if 'skills' in persona:
     skills_set = set(persona['skills'])
-    if frontend.issubset(skills_set):
-        print('La persona es un desarrollador frontend')
+    if fullstack.issubset(skills_set):
+        print('La persona es un desarrollador fullstack')
     elif backend.issubset(skills_set):
         print('La persona es un desarrollador backend')
-    elif fullstack.issubset(skills_set):
-        print('La persona es un desarrollador full stack')
+    elif frontend.issubset(skills_set):
+        print('La persona es un desarrollador frontend')
     else:
         print('La persona no está en estas tres categorías')
 else:
