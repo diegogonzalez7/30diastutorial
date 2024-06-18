@@ -1,4 +1,3 @@
-'''
 # Un set es una colección desordenada, no indexada y sin elementos repetidos
 # En Python suele usarse para almacenar elementos únicos
 
@@ -86,7 +85,7 @@ frutas_set.clear()
 # BORRAR UN SET
 del frutas_set
 
-'''
+
 # EJERCICIOS
 it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
 A = {19, 22, 24, 20, 25, 26}
