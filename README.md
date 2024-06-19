@@ -8,3 +8,4 @@
  - Día 7: [Sets](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia7)
  - Día 8: [Diccionarios](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia8) 
  - Día 9: [Condicionales](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia9)
+ - Día 10: [Bucles](https://github.com/diegogonzalez7/30diastutorial/tree/master/dia10)
