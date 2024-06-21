@@ -1,4 +1,3 @@
-'''
 # Los usuarios creamos funciones para hacer el código más legible y reutilizable
 # En Python tenemos la palabra reservada 'def' para definir las funciones
 # En la definición podemos declarar parámetros, los cuales tendremos que pasar cuando llamemos a la función
@@ -95,7 +94,7 @@ def area_circulo(lado):
     return area
 print(area_circulo(5))
 
-'''
+
 # 3) Haz una función que sume todos los números que se le pase, y que compruebe que todos son números
 def suma_total(*numeros):
     total = 0
@@ -107,42 +106,185 @@ def suma_total(*numeros):
     return (total)
 print(suma_total(10,5,6,'else')) 
 
-# 4)
 
-# 5)
+# 4) Haz una función que pase de grados Cº a Fº
+## Fº = (Cº * 9/5) + 32
+def fahrenheit(grados):
+    grados_f = (grados * 9 / 5) + 32
+    return grados_f
+print(fahrenheit(30))
 
-# 6)
 
-# 7)
+# 5) Haz una función que devuelva la estación del mes introducido
+def estacion(mes):
+    invierno = ['enero', 'febrero', 'diciembre']
+    verano = ['junio', 'julio', 'agosto']
+    otoño = ['septiembre', 'octubre', 'noviembre']
+    primavera = ['marzo', 'abril', 'mayo']
+    if mes in primavera:
+        print('El mes introducido ({}) pertenece a Primavera' .format(mes))
+    elif mes in verano:
+        print('El mes introducido ({}) pertenece a Verano' .format(mes))
+    elif mes in otoño:
+        print('El mes introducido ({}) pertenece a Otoño' .format(mes))
+    elif mes in invierno:
+        print('El mes introducido ({}) pertenece a Invierno' .format(mes))     
+    else:
+        primavera('El mes introducido no es válido, prueba a escribirlo en minúsculas')
+estacion('enero')
 
-# 8)
 
-# 9)
+# 6) Haz una función que calcule la pendiente de una ecuación lineal dada
+## y = m*x + c
+def pendiente(m,x,c=0):
+    print('La pendiente de la ecuación {} * {} + {} es {}' .format(m,x,c,m))
 
-# 10)
+m = int(input('Introduzca el valor del coeficiente: '))
+x = int(input('Introduzca el valor de la variable: '))
+c = int(input('Introduzca el valor de la constante: '))
+pendiente(m,x,c)
 
-# 11)
 
-# 12)
+# 7) Haz una función que calcule los resultados de una ecuación cuadrática
+## ax² + bx + c = 0
+## x = (-b ± √(b²-4ac)) / (2a)
+import math
+def ec_cuadratica(a=0,b=0,c=0):
+    if (b*b)-(4*a*c) >= 0:
+        resultado1 = (-b + math.sqrt((b*b)-(4*a*c))) / (2*a)
+        resultado2 = (-b - math.sqrt((b*b)-(4*a*c))) / (2*a)
+        print('Los valores de x para la ecuación {}x² + {}x + {} son {:.2f} y {:.2f}' .format(a,b,c,resultado1,resultado2))
+    else:
+        print('Math error')
+    
+a = int(input('Introduzca el valor del coeficiente de x²: '))
+b = int(input('Introduzca el valor del coeficiente de x: '))
+c = int(input('Introduzca el valor de la constante: '))
+ec_cuadratica(a,b,c)
 
-# 13)
 
-# 14)
+# 8) Haz una función que imprima una lista que se le pasa por parámetro
+def print_list(lista):
+    for element in lista:
+        print(element)
+print_list([1,2,3,4,5])
 
-# 15)
 
-# 16)
+# 9) Haz una función que revierta una lista
+def reverse_list(lista):
+    nueva_lista = []
+    for element in range(len(lista)-1, -1, -1):
+        nueva_lista.append(lista[element])
+    print(nueva_lista)
+reverse_list([1,2,3,45,6])
 
-# 17)
 
-# 18)
+# 10) Haz una función que ponga la primera letra en mayúscula de las palabras de una lista
+def capitalize(lista):
+    lista_cap = []
+    for string in lista:
+        if isinstance(string, str):
+            lista_cap.append(string.capitalize())
+        else:
+            return TypeError
+    print(lista_cap)
+capitalize(['hola','que tal','adios'])
 
-# 19)
 
-# 20)
+# 11) Haz una función que añada un nuevo elemento a una lista que se le pasa como parámetro
+def add_item(lista, item):
+    lista.append(item)
+    print(lista)
+add_item(['a','b','c'], 'd')
 
-# 21)
 
-# 22)
+# 12) Haz ahora una función que elimine un elemento de una lista que se le pasa como parámetro
+def remove_item(lista):
+    elemento_eliminado = lista.pop()
+    print('Se ha eliminado el elemento {}. Lista resultante: {}' .format(elemento_eliminado, lista))
+remove_item([1,2,3,4,5])
 
-# 23)
+def remove_item2(lista, elemento):
+    for item in lista:
+        if elemento == item:
+            lista.remove(3)
+    print(lista)
+remove_item2([1,2,3,4,5,6,3,1,3],3)
+
+
+# 13) Haz una función que calcule la suma de números desde 0 hasta el que se pasa como parámetro
+def suma_all(n):
+    count = 0
+    suma = 0
+    while count <= n:
+        suma += count
+        count += 1
+    return(suma)
+print(suma_all(56)) # 1596
+
+# 14) Haz una función que cuente desde 0 hasta n los números pares e impares, siendo n un número
+# entero pasado como argumento 
+def pares_e_impares(num):
+    count_pares = 0
+    count_impares = 0
+    for i in range(0,num+1):
+        if i % 2 == 0:
+            count_pares += 1
+        elif i % 2 != 0:
+            count_impares += 1
+    print('Hay {} números impares' .format(count_impares))
+    print('Hay {} números pares' .format(count_pares))
+pares_e_impares(100)
+
+
+# 15) Haz una funcion que calcule el factorial de un número
+## Con recursividad
+def factorial(num):
+    if num == 0:
+        return 1
+    else:
+        return (num * factorial(num-1))
+print(factorial(5))
+
+## Sin recursividad
+def factorial2(num):
+    factorial = 1
+    for i in range(1,num+1):
+        factorial *= i
+    return factorial
+print(factorial2(5))
+
+
+# 16) Haz una función que diga si un número es primo o no
+def primo(numero):
+    for i in range(2,numero):
+        if numero % i == 0:
+            return False
+    else:
+        return True
+print(primo(8))
+
+string = 'Hola Hola'
+print(string.find('Hola'))
+print(string.rfind('Hola'))
+
+# 17) Haz una función que diga si todos los elementos de una lista son únicos o no
+def unique(lista):
+    return len(lista) == len(set(lista))
+
+lista = [1,2,3,4,5,6]
+lista2 = ['hola', 'hola', 'Hola']
+print(unique(lista))
+print(unique(lista2))
+
+
+# 18) Haz una función que compruebe que todos los elementos sean del mismo tipo
+def mismo_tipo(lista):
+    tipo = type(lista[0])
+    for item in lista:
+        if type(item) != tipo:
+            return False
+    else:
+        return True
+list = [1,2,3,4,'4.0']
+print(mismo_tipo(list))
