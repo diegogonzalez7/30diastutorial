@@ -11,3 +11,4 @@
  - Día 10: [Bucles](https://github.com/diegogonzalez7/30diastutorial/tree/master/10_Bucles)
  - Día 11: [Funciones](https://github.com/diegogonzalez7/30diastutorial/tree/master/11_Funciones)
  - Día 12: [Módulos](https://github.com/diegogonzalez7/30diastutorial/tree/master/12_Modulos)
+ - Día 13: [Comprensión de listas](https://github.com/diegogonzalez7/30diastutorial/tree/master/13_Comprension_Listas)
