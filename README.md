@@ -9,4 +9,5 @@
  - Día 8: [Diccionarios](https://github.com/diegogonzalez7/30diastutorial/tree/master/08_Diccionarios) 
  - Día 9: [Condicionales](https://github.com/diegogonzalez7/30diastutorial/tree/master/09_Condicionales)
  - Día 10: [Bucles](https://github.com/diegogonzalez7/30diastutorial/tree/master/10_Bucles)
- - Día 11: [Funciones](https://github.com/diegogonzalez7/30diastutorial/tree/master/11_Funciones) 
+ - Día 11: [Funciones](https://github.com/diegogonzalez7/30diastutorial/tree/master/11_Funciones)
+ - Día 12: [Módulos](https://github.com/diegogonzalez7/30diastutorial/tree/master/12_Modulos)
