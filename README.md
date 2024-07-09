@@ -12,3 +12,4 @@
  - Día 11: [Funciones](https://github.com/diegogonzalez7/30diastutorial/tree/master/11_Funciones)
  - Día 12: [Módulos](https://github.com/diegogonzalez7/30diastutorial/tree/master/12_Modulos)
  - Día 13: [Comprensión de listas](https://github.com/diegogonzalez7/30diastutorial/tree/master/13_Comprension_Listas)
+ - Día 14: [Funciones de orden superior](https://github.com/diegogonzalez7/30diastutorial/tree/master/14_Funciones_orden_superior)
